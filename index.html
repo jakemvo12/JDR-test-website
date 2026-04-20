@@ -509,14 +509,19 @@
       overflow: hidden;
     }
 
-    .service-card-img {
+    .service-card-img-wrap {
       width: calc(100% + 4rem);
       margin: 0.75rem -2rem 1.5rem;
       height: 160px;
-      display: block;
+      overflow: hidden;
+      border-bottom: 1px solid var(--border);
+    }
+    .service-card-img-wrap img {
+      width: 100%;
+      height: 100%;
       object-fit: cover;
       object-position: center;
-      border-bottom: 1px solid var(--border);
+      display: block;
     }
 
     .service-card {
@@ -1250,7 +1255,9 @@
         <!-- Card 1: Lawn Care -->
         <div class="service-card reveal">
           <h3>Lawn Care</h3>
-          <img class="service-card-img" src="https://images.unsplash.com/photo-1665452781449-cde6654b04e4?w=800&h=500&fit=crop&auto=format" alt="Person mowing a lush green lawn" loading="lazy">
+          <div class="service-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1665452781449-cde6654b04e4?w=800&h=500&fit=crop&auto=format" alt="Person mowing a lush green lawn" loading="lazy">
+          </div>
           <p>Weekly and bi-weekly mowing, edging, trimming, and blowing — keeping your lawn crisp, healthy, and picture-perfect all season long.</p>
           <a href="#contact" class="service-link">
             Learn More
@@ -1261,7 +1268,9 @@
         <!-- Card 2: Yard Cleanup -->
         <div class="service-card reveal reveal-delay-1">
           <h3>Yard Cleanup</h3>
-          <img class="service-card-img" src="https://images.unsplash.com/photo-1474742817425-9f91918183b7?w=800&h=500&fit=crop&auto=format" alt="Garden tools and yard cleanup scene" loading="lazy">
+          <div class="service-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1474742817425-9f91918183b7?w=800&h=500&fit=crop&auto=format" alt="Garden tools and yard cleanup scene" loading="lazy">
+          </div>
           <p>Our yard clean up service will give your yard a refresh! We will remove any type of debris, trim overgrown areas, and define edges to enhance the overall look of your yard.</p>
           <a href="#contact" class="service-link">
             Learn More
@@ -1272,7 +1281,9 @@
         <!-- Card 3: Mulching -->
         <div class="service-card reveal reveal-delay-2">
           <h3>Mulching</h3>
-          <img class="service-card-img" src="https://images.unsplash.com/photo-1649043601834-21dbcc89474b?w=800&h=500&fit=crop&auto=format" alt="Clean garden bed with fresh mulch" loading="lazy">
+          <div class="service-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1649043601834-21dbcc89474b?w=800&h=500&fit=crop&auto=format" alt="Clean garden bed with fresh mulch" loading="lazy">
+          </div>
           <p>We offer mulching services to restore your garden beds and enhance your yard's appearance. This will help suppress weeds, define garden beds, and reduce erosion!</p>
           <a href="#contact" class="service-link">
             Learn More
@@ -1283,7 +1294,9 @@
         <!-- Card 4: Leaf Removal -->
         <div class="service-card reveal reveal-delay-3">
           <h3>Leaf Removal</h3>
-          <img class="service-card-img" src="https://images.unsplash.com/photo-1639005194389-873c5083d835?w=800&h=500&fit=crop&auto=format" alt="Fall leaves covering a lawn awaiting removal" loading="lazy">
+          <div class="service-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1639005194389-873c5083d835?w=800&h=500&fit=crop&auto=format" alt="Fall leaves covering a lawn awaiting removal" loading="lazy">
+          </div>
           <p>Our leaf removal service will keep your yard looking pristine all season long! We will efficiently clear all leaves and debris from your lawn, beds, and hard surfaces to keep your property clean and healthy.</p>
           <a href="#contact" class="service-link">
             Learn More
@@ -1294,7 +1307,9 @@
         <!-- Card 5: Power Washing -->
         <div class="service-card reveal">
           <h3>Power Washing</h3>
-          <img class="service-card-img" src="https://images.pexels.com/photos/35153375/pexels-photo-35153375.jpeg" alt="Outdoor surface being power washed clean" loading="lazy">
+          <div class="service-card-img-wrap">
+            <img src="https://images.pexels.com/photos/35153375/pexels-photo-35153375.jpeg" alt="Outdoor surface being power washed clean" loading="lazy">
+          </div>
           <p>Our power washing service will restore the look of your outdoor surfaces! We will blast away dirt, grime, and buildup from driveways, sidewalks, decks, and more to leave your property looking fresh and clean.</p>
           <a href="#contact" class="service-link">
             Learn More
@@ -1305,7 +1320,9 @@
         <!-- Card 6: Junk Removal -->
         <div class="service-card reveal reveal-delay-1">
           <h3>Junk Removal</h3>
-          <img class="service-card-img" src="https://plus.unsplash.com/premium_photo-1661290296426-d55fd01740c1?q=80&w=1771&auto=format&fit=crop" alt="Clean cleared outdoor space after junk removal" loading="lazy">
+          <div class="service-card-img-wrap">
+            <img src="https://plus.unsplash.com/premium_photo-1661290296426-d55fd01740c1?q=80&w=1771&auto=format&fit=crop" alt="Clean cleared outdoor space after junk removal" loading="lazy">
+          </div>
           <p>Our junk removal service will clear out the clutter and give your property a clean slate! We will haul away unwanted debris, old equipment, and any other junk so you can enjoy a clean and organized outdoor space.</p>
           <a href="#contact" class="service-link">
             Learn More
@@ -1316,7 +1333,9 @@
         <!-- Card 7: Snow Removal -->
         <div class="service-card reveal reveal-delay-2">
           <h3>Snow Removal</h3>
-          <img class="service-card-img" src="https://images.unsplash.com/photo-1629818571630-5523061def62?q=80&w=2096&auto=format&fit=crop" alt="Snow being cleared from a driveway" loading="lazy">
+          <div class="service-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1629818571630-5523061def62?q=80&w=2096&auto=format&fit=crop" alt="Snow being cleared from a driveway" loading="lazy">
+          </div>
           <p>Our snow removal service will keep your property safe and accessible all winter long! We will clear snow and ice from driveways, walkways, and parking areas so you never have to worry when the storm hits.</p>
           <a href="#contact" class="service-link">
             Learn More
@@ -1327,7 +1346,9 @@
         <!-- Card 8: Window Cleaning -->
         <div class="service-card reveal reveal-delay-3">
           <h3>Window Cleaning</h3>
-          <img class="service-card-img" src="https://plus.unsplash.com/premium_photo-1676810459656-ce0b050e9ccd?q=80&w=1770&auto=format&fit=crop" alt="Clean bright windows on a house exterior" loading="lazy">
+          <div class="service-card-img-wrap">
+            <img src="https://plus.unsplash.com/premium_photo-1676810459656-ce0b050e9ccd?q=80&w=1770&auto=format&fit=crop" alt="Clean bright windows on a house exterior" loading="lazy">
+          </div>
           <p>Our window cleaning service will leave your windows spotless and streak-free! We will carefully clean every pane to maximize your natural light and keep your property looking sharp from the outside in.</p>
           <a href="#contact" class="service-link">
             Learn More
