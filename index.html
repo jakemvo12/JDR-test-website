@@ -286,12 +286,13 @@
     }
     .nav-drawer.open { transform: translateX(0); }
     .nav-drawer .nav-links {
+      display: flex;
       flex-direction: column;
       align-items: flex-start;
       gap: 1.5rem;
     }
     .nav-drawer .nav-links a { font-size: 1.1rem; }
-    .nav-drawer .btn-nav { width: fit-content; }
+    .nav-drawer .btn-nav { display: inline-block; width: fit-content; }
 
     /* ═══════════════════════════════
        HERO
