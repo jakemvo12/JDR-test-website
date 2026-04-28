@@ -1853,6 +1853,9 @@
         ctx.restore();
       }
 
+      let lastWidth = 0;
+      let resizeTimer = null;
+
       function resize() {
         const dpr = window.devicePixelRatio || 1;
         const section = canvas.parentElement;
@@ -1864,6 +1867,15 @@
         canvas.style.height = h + 'px';
         ctx.scale(dpr, dpr);
         beams = Array.from({ length: BEAM_COUNT }, () => createBeam(w, h));
+        lastWidth = w;
+      }
+
+      function onResize() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+          const w = canvas.parentElement.offsetWidth;
+          if (w !== lastWidth) resize();
+        }, 200);
       }
 
       function animate() {
@@ -1881,7 +1893,7 @@
       }
 
       resize();
-      window.addEventListener('resize', resize);
+      window.addEventListener('resize', onResize);
       animate();
     })();
 
